@@ -24,6 +24,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      # from https://medium.com/@giuliovdev/using-gitversion-in-github-actions-beta-6e50c177eef8
+      - run: |
+          git fetch --tags
+          git branch --create-reflog master origin/master      
 
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@v0.9.7
