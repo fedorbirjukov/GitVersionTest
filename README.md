@@ -1,1 +1,1 @@
-# GitVersionTest
+# GitVersionTest 1.0
