@@ -28,7 +28,7 @@ jobs:
       # from https://medium.com/@giuliovdev/using-gitversion-in-github-actions-beta-6e50c177eef8
       - run: |
           git fetch --tags
-          git branch --create-reflog master origin/master      
+          git branch --create-reflog main origin/main
 
       - name: Install GitVersion
         uses: gittools/actions/gitversion/setup@v0.9.7
